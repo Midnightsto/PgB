@@ -417,4 +417,4 @@ if(message.content == "AB Mizar" ) {
     });
 }
 })
-bot.login('NDUxNDUxMjk1OTg4MDU2MDY1.DfB-Tg.YJaWyzHiG5E4hKUFr7SPP4tw5eo')
+bot.login(procces.env.BOT_TOKEN)
