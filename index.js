@@ -260,7 +260,7 @@ if(message.content == "Blaster Draconis" ) {
             { name: "Energy", value: "32\n33\n34\n35\n37\37\n33\n74", inline: true},
             { name: "Rank",   value: "58\n63\n65", inline: true},
             { name: "Planet", value: "Gazica\nGazica\nMantis Hive \n Mantis Hive \n Mantis Hive\nR5", inline: true},
-            { name: "Mantis", value: "R62~64 Assasin\n65,66\n67!69\n70\n67~70 Assasin, harv\nR82 Boss",inline :true},
+            { name: "Mantis", value: "R62~64 Assasin\n65,66\n67,69\n70\n67~70 Assasin, harv\nR82 Boss",inline :true},
         ]
       }
     });
