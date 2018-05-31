@@ -6,7 +6,7 @@ client.on('ready', () => {
     client.user.setActivity('https://git.io/d.js-heroku', {type: 'WATCHING'});
 });
 
-client.on('message', msg => {
+client.on('message', (message) => {
        if(message.content == "RD Vega") {
         message.channel.send({embed: {
             color: 3447003,
