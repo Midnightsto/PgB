@@ -548,6 +548,54 @@ if(message.content == "pg!Rocket Draconis" ) {
       }
     });
 }
+    if(message.content == "pg!Shield Vega" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Vega:",
+        fields: [
+            { name: "Name",   value: "Enhanced Ion\nPower Ion\nEnhanced Power Ion\nVega Ion\nVega Ancient\nVega Ancient Rapid\nVega Ancient Strong", inline: true},
+            { name: "Cryo",   value: "103\n186\n378\n755\n869", inline: true},
+            { name: "Energy", value: "14\n20\n24\n30\n30\n30\n20\n45", inline: true},
+            { name: "Rank",   value: "8\n10\n12", inline: true},
+            { name: "Planet", value: "Lyris\nAurora\nAurora\nAll Planets\nR5", inline: true},
+            { name: "Mantis", value: "R9,10 Marauder\nR11 Marauder\nR13,15\nMarauder\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
+        if(message.content == "pg!Shield Antares" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Antares:",
+        fields: [
+            { name: "Name",   value: "Augmented Ion\nDeflecting Ion\nInfused Ion\nNano Skin Ion\nAntare Ion\nAntares Ancient\nAntares Ancient Rapid\nAntares Ancient Strong", inline: true},
+            { name: "Cryo",   value: "512\n608\n828\n1'066\n2'132\n2'452", inline: true},
+            { name: "Energy", value: "36\n40\n46\n50\n50\n50\n33\n75", inline: true},
+            { name: "Rank",   value: "14\n16\n18\n20", inline: true},
+            { name: "Planet", value: "Terasa\nTerasa\nLustra\nLustra\nAll Planets\nR5", inline: true},
+            { name: "Mantis", value: " Marauder\nR20 Marauder\nMarauder\nMarauder\nMarauder\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
+            if(message.content == "pg!Shield Gemini" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Gemini:",
+        fields: [
+            { name: "Name",   value: "Scattered Fusion\nHot Electron Fusion\nPlasma Fusion\nGemini Fusion\nGemini Ancient\nGemini Ancient Rapid\nGemini Ancient Strong", inline: true},
+            { name: "Cryo",   value: "1'317\n1'446\n1'589\n3'178\n3'654", inline: true},
+            { name: "Energy", value: "56\n60\n66\n66\n66\n44\n99", inline: true},
+            { name: "Rank",   value: "23\n25\n28", inline: true},
+            { name: "Planet", value: "\nAll planets\nAll planets\nTechnatoria\nAll Planets\nR5", inline: true},
+            { name: "Mantis", value: "R27 Marauder Resurrector,R28 paralyzor\nR29 Marauder,Resurrector,R31 Paralyzor\nMarauder,Ressurector,R33 Paralyzor\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
 });
 
 client.login(process.env.TOKEN);
