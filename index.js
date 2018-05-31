@@ -590,8 +590,56 @@ if(message.content == "pg!Rocket Draconis" ) {
             { name: "Cryo",   value: "1'317\n1'446\n1'589\n3'178\n3'654", inline: true},
             { name: "Energy", value: "56\n60\n66\n66\n66\n44\n99", inline: true},
             { name: "Rank",   value: "23\n25\n28", inline: true},
-            { name: "Planet", value: "\nAll planets\nAll planets\nTechnatoria\nAll Planets\nR5", inline: true},
+            { name: "Planet", value: "All planets\nAll planets\nTechnatoria\nAll Planets\nR5", inline: true},
             { name: "Mantis", value: "R27 Marauder Resurrector,R28 paralyzor\nR29 Marauder,Resurrector,R31 Paralyzor\nMarauder,Ressurector,R33 Paralyzor\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
+                if(message.content == "pg!Shield Mizar" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Mizar:",
+        fields: [
+            { name: "Name",   value: "Fusion Flare\nFusion Faraday\nAlpha Fusion\nFusion Force\nMizar Mirror Fusion\nMizar Ancient\nMizar Ancient Rapid\nMizar Ancient Strong", inline: true},
+            { name: "Cryo",   value: "2'186\n2'735\n3'463\n3'756\n7'512\n8'639", inline: true},
+            { name: "Energy", value: "70\n76\n80\n86\n86\n86\n57\n129", inline: true},
+            { name: "Rank",   value: "23\n25\n28", inline: true},
+            { name: "Planet", value: "Baumar\nBaumar\nMolikar\nMolikar\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "R35 Marauder \nR39 Marauder\nMarauder\nMarauder\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
+                    if(message.content == "pg!Shield Sol" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Sol:",
+        fields: [
+            { name: "Name",   value: "Antimatter\nAM Enhanced\nAM Power\nAM Deflecting \nAm Infusion Shield\nAM Kinetic Graviton\nAm Temporal Phasing\nSol Solo\nSolo Ancient\nSolo Ancient Rapid\nSolo Ancient Strong", inline: true},
+            { name: "Cryo",   value: "3'935\n4'135\n4'322\n4'787\4'991\n5'849\n8'702\n17'404\n20'014", inline: true},
+            { name: "Energy", value: "90\n96\n100\n106\n110\n116\n120\n120\n120\n80\n180", inline: true},
+            { name: "Rank",   value: "40\n43\n45\n48\n50\n53\n55", inline: true},
+            { name: "Planet", value: "Mars\nMars\nMars\nMoon\nMoon\nEarth\nEarth\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "R45~47 Marauder \nR48~49 Marauder\nR50Marauder\nR52~54\nR55,56\nR57,58\n59,60\nR45~60\nMarauder\nR82 Boss unit ",inline :true},
+        ]
+      }
+    });
+}
+                    if(message.content == "pg!Shield Draconis" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Shields obtainable in Draconis:",
+        fields: [
+            { name: "Name",   value: "\nDraconis Dunebus\nDraconis Ancient\nDraconis Ancient Rapid\nDraconis Ancient Strong", inline: true},
+            { name: "Cryo",   value: "17'395\n24'055\n35'631\n43'443\n86'886\n99'919", inline: true},
+            { name: "Energy", value: "126\n130\n136\n140\n140\n140\n93\n210", inline: true},
+            { name: "Rank",   value: "58\n60\n63\n65", inline: true},
+            { name: "Planet", value: "Gazica\nGazica\nHive\nHive\nHive\nR5", inline: true},
+            { name: "Mantis", value: " Marauder,Ressurector\n Marauder,Ressurector\nMarauder,Ressurector\nMarauder,Ressurector\nMarauder\nR82 Boss unit ",inline :true},
         ]
       }
     });
