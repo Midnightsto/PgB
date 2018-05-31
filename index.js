@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-       if(message.content == "RD Vega") {
+       if(message.content == "pg!RD Vega") {
         message.channel.send({embed: {
             color: 3447003,
             title: "RD available in vega:",
@@ -22,7 +22,7 @@ client.on('message', (message) => {
             }
         });
     }
-    if(message.content == "RD Antares" ) {
+    if(message.content == "pg!RD Antares" ) {
 
         message.channel.send({embed: {
             color: 3447003,
@@ -38,7 +38,7 @@ client.on('message', (message) => {
           }
         });
     }
-    if(message.content == "RD Gemini" ) {
+    if(message.content == "pg!RD Gemini" ) {
 
         message.channel.send({embed: {
             color: 3447003,
@@ -54,7 +54,7 @@ client.on('message', (message) => {
           }
         });
     }
-    if(message.content == "RD Mizar" ) {
+    if(message.content == "pg!RD Mizar" ) {
 
         message.channel.send({embed: {
             color: 3447003,
@@ -70,7 +70,7 @@ client.on('message', (message) => {
           }
         });
     }
-    if(message.content == "RD Sol" ) {
+    if(message.content == "pg!RD Sol" ) {
 
         message.channel.send({embed: {
             color: 3447003,
@@ -86,7 +86,7 @@ client.on('message', (message) => {
           }
         });
     }
-    if(message.content == "RD Draconis" ) {
+    if(message.content == "pg!RD Draconis" ) {
 
         message.channel.send({embed: {
             color: 3447003,
@@ -102,64 +102,64 @@ client.on('message', (message) => {
           }
         });
     }
-    if(message.content == "Energy Kalabesh"){
+    if(message.content == "pg!Energy Kalabesh"){
         message.channel.send("Here is the map you requested", {files: ["https://imgur.com/MqbNU3S.png"]});
 
     }
-    if(message.content == "Energy Axiom"){
+    if(message.content == "pg!Energy Axiom"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/Gcl9nxh.png"]});
     }
-    if(message.content == "Energy Colossus"){
+    if(message.content == "pg!Energy Colossus"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/mUpcZzR.png"]});
     }
-    if(message.content == "Energy Lyris"){
+    if(message.content == "pg!Energy Lyris"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/8VGrlen.png"]});
     }
-    if(message.content == "Energy Aurora"){
+    if(message.content == "pg!Energy Aurora"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/DVJ7MiG.png"]});
     }
-    if(message.content == "Mantis Aurora"){
+    if(message.content == "pg!Mantis Aurora"){
         message.channel.send("Here is the map you requested",{files:  ["https://imgur.com/o3rFdco.png"]});
 
     }
-    if(message.content == "Turret Aurora"){
+    if(message.content == "pg!Turret Aurora"){
         message.channel.send("Here is the map you requested", {files: ["https://imgur.com/BrMwbR2.png"]});
 
     }
-    if(message.context == "Energy Phobos"){
+    if(message.context == "pg!Energy Phobos"){
         message.channel.send("Here is the map you requested",{files:  ["https://imgur.com/svzG2Fq.png"]});
     }
-    if(message.content == "Energy Dante"){
+    if(message.content == "pg!Energy Dante"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/nJh7S58.png"]});
     }
     if(message.content == "Energy Asteroid Junkyard"){
         message.channel.send("Here is the map you requested",{files: ["https://imgur.com/hk1WBba.png"]});
     
     }
-    if(message.content == "Energy Remo"){
+    if(message.content == "pg!Energy Remo"){
         message.channel.send("Here is the map that you requested",{files: ["https://imgur.com/EanOJ5T.png"]});
     }
-    if(message.content == "Energy Lustra"){
+    if(message.content == "pg!Energy Lustra"){
         message.channel.send("Here is the map that u requested",{files:["https://imgur.com/a/YxdcvC3.png"]});
     }
-    if(message.content == "Mantis Lustra"){
+    if(message.content == "pg!Mantis Lustra"){
         message.channel.send("Here is the map that u requested",{files:["https://imgur.com/hoWMmu8.png"]});
     }
-    if(message.content == "Energy Terasa"){
+    if(message.content == "pg!Energy Terasa"){
         message.channel.send("Here is the map that u requested",{files:["https://imgur.com/kiR9ZNQ.png"]});
 
     }
-    if(message.content == "Mantis Terasa"){
+    if(message.content == "pg!Mantis Terasa"){
         message.channel.send("Here is the map that you requested",{files:["https://imgur.com/fkgLG0Z.png"]});
 
     }
-    if(message.content == "Energy Goya"){
+    if(message.content == "pg!Energy Goya"){
         message.channel.send("Here is the map that you requested",{files:["https://imgur.com/cPrwv72.png"]});
     }
-    if(message.content == "Energy Prosperous"){
+    if(message.content == "pg!Energy Prosperous"){
         message.channel.send("Here is the map that you requested",{files:["https://imgur.com/cPrwv72.png"]});
     }
-    if(message.content == "Bhelp"){
+    if(message.content == "pg!help"){
     message.channel.send({embed: {
         color: 3447003,
         title: "Command:",
@@ -169,7 +169,7 @@ client.on('message', (message) => {
         ]
     }})
 }
-if(message.content == "Blaster Vega" ) {
+if(message.content == "pg!Blaster Vega" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -185,7 +185,7 @@ if(message.content == "Blaster Vega" ) {
       }
     });
 }
-if(message.content == "Blaster Antares" ) {
+if(message.content == "pg!Blaster Antares" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -201,7 +201,7 @@ if(message.content == "Blaster Antares" ) {
       }
     });
 }
-if(message.content == "Blaster Gemini" ) {
+if(message.content == "pg!Blaster Gemini" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -217,7 +217,7 @@ if(message.content == "Blaster Gemini" ) {
       }
     });
 }
-if(message.content == "Blaster Mizar" ) {
+if(message.content == "pg!Blaster Mizar" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -233,7 +233,7 @@ if(message.content == "Blaster Mizar" ) {
       }
     });
 }
-if(message.content == "Blaster Sol" ) {
+if(message.content == "pg!Blaster Sol" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -249,7 +249,7 @@ if(message.content == "Blaster Sol" ) {
       }
     });
 }
-if(message.content == "Blaster Draconis" ) {
+if(message.content == "pg!Blaster Draconis" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -265,7 +265,7 @@ if(message.content == "Blaster Draconis" ) {
       }
     });
 }
-if(message.content == "Collector Vega" ) {
+if(message.content == "pg!Collector Vega" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -280,7 +280,7 @@ if(message.content == "Collector Vega" ) {
       }
     });
 }
-if(message.content == "Collector Antares" ) {
+if(message.content == "pg!Collector Antares" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -295,7 +295,7 @@ if(message.content == "Collector Antares" ) {
       }
     });
 }
-if(message.content == "Collector Gemini" ) {
+if(message.content == "pg!Collector Gemini" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -310,7 +310,7 @@ if(message.content == "Collector Gemini" ) {
       }
     });
 }
-if(message.content == "Collector Mizar" ) {
+if(message.content == "pg!Collector Mizar" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -325,7 +325,7 @@ if(message.content == "Collector Mizar" ) {
       }
     });
 }
-if(message.content == "Collector Sol" ) {
+if(message.content == "pg!Collector Sol" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -340,7 +340,7 @@ if(message.content == "Collector Sol" ) {
       }
     });
 }
-if(message.content == "Collector Draconis" ) {
+if(message.content == "pg!Collector Draconis" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -356,7 +356,7 @@ if(message.content == "Collector Draconis" ) {
     });
 }
 
-if(message.content == "AB Vega" ) {
+if(message.content == "pg!AB Vega" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -372,7 +372,7 @@ if(message.content == "AB Vega" ) {
       }
     });
 }
-if(message.content == "AB Antares" ) {
+if(message.content == "pg!AB Antares" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -388,7 +388,7 @@ if(message.content == "AB Antares" ) {
       }
     });
 }
-if(message.content == "AB Gemini" ) {
+if(message.content == "pg!AB Gemini" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -404,7 +404,7 @@ if(message.content == "AB Gemini" ) {
       }
     });
 }
-if(message.content == "AB Mizar" ) {
+if(message.content == "pg!AB Mizar" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -420,7 +420,7 @@ if(message.content == "AB Mizar" ) {
       }
     });
 }
-if(message.content == "AB Sol" ) {
+if(message.content == "pg!AB Sol" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -436,7 +436,7 @@ if(message.content == "AB Sol" ) {
       }
     });
 }
-if(message.content == "AB Draconis" ) {
+if(message.content == "pg!AB Draconis" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -452,7 +452,7 @@ if(message.content == "AB Draconis" ) {
       }
     });
 }
-if(message.content == "Rocket Vega" ) {
+if(message.content == "pg!Rocket Vega" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -468,7 +468,7 @@ if(message.content == "Rocket Vega" ) {
       }
     });
 }
-if(message.content == "Rocket Antares" ) {
+if(message.content == "pg!Rocket Antares" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -484,7 +484,7 @@ if(message.content == "Rocket Antares" ) {
       }
     });
 }
-if(message.content == "Rocket Gemini" ) {
+if(message.content == "pg!Rocket Gemini" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -500,7 +500,7 @@ if(message.content == "Rocket Gemini" ) {
       }
     });
 }
-if(message.content == "Rocket Mizar" ) {
+if(message.content == "pg!Rocket Mizar" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -516,7 +516,7 @@ if(message.content == "Rocket Mizar" ) {
       }
     });
 }
-if(message.content == "Rocket Sol" ) {
+if(message.content == "pg!Rocket Sol" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -532,7 +532,7 @@ if(message.content == "Rocket Sol" ) {
       }
     });
 }
-if(message.content == "Rocket Draconis" ) {
+if(message.content == "pg!Rocket Draconis" ) {
 
     message.channel.send({embed: {
         color: 3447003,
