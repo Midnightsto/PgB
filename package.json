@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/synicalsyntax/discord.js-heroku.git"
+    "url": "git+https://github.com/Midnightsto/PgB"
   },
   "keywords": [
     "heroku",
     "discord.js"
   ],
-  "author": "synicalsyntax",
+  "author": "Midnight",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/synicalsyntax/discord.js-heroku/issues"
+    "url": "https://github.com/Midnightsto/PgB/issues"
   },
-  "homepage": "https://github.com/synicalsyntax/discord.js-heroku#readme",
+  "homepage": "https://github.com/Midnightsto/PgB",
   "dependencies": {
     "discord.js": "^11.3.0"
   }
