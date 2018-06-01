@@ -644,7 +644,7 @@ if(message.content == "pg!Rocket Draconis" ) {
       }
     });
 }
-                        if(message.content == "pg!RT Vega" ) {
+if(message.content == "pg!RT Vega" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -660,7 +660,7 @@ if(message.content == "pg!Rocket Draconis" ) {
       }
     });
 }
-                         if(message.content == "pg!RT Antares" ) {
+if(message.content == "pg!RT Antares" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -676,7 +676,7 @@ if(message.content == "pg!Rocket Draconis" ) {
       }
     });
 }
-                            if(message.content == "pg!RT Gemini" ) {
+if(message.content == "pg!RT Gemini" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -691,8 +691,7 @@ if(message.content == "pg!Rocket Draconis" ) {
         ]
       }
     });
-}
-	                        if(message.content == "pg!RT Mizar" ) {
+if(message.content == "pg!RT Mizar" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -704,10 +703,11 @@ if(message.content == "pg!Rocket Draconis" ) {
             { name: "Rank",   value: "30\n33\n35\n38", inline: true},
             { name: "Planet", value: "Baumar\nBaumar\nMolikar\nMolikar\nAll planets\nR5", inline: true},
             { name: "Mantis", value: "R37,35 Mender\n38,39\n40,41\n43,44\n35~44\nR82 Strong Unit", inline: true},
-      }
+        ]
+    }
     });
 }
-			                        if(message.content == "pg!RT Sol" ) {
+if(message.content == "pg!RT Sol" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -719,10 +719,11 @@ if(message.content == "pg!Rocket Draconis" ) {
             { name: "Rank",   value: "40\n43\n45\n48\n50\n53\n55", inline: true},
             { name: "Planet", value: "Mars\nMars\nMars\nMoon\nMoon\nEarth\nEarth\n All planets\nR5", inline: true},
             { name: "Mantis", value: "R45,47 Mender\n48,49\n50\n52,54Repogrub\n55,57\n57,58\n59,60\n52~60\nR82 Strong Unit", inline: true},
+        ]
       }
     });
 }
-	                        if(message.content == "pg!RT Draconis" ) {
+if(message.content == "pg!RT Draconis" ) {
 
     message.channel.send({embed: {
         color: 3447003,
@@ -734,9 +735,11 @@ if(message.content == "pg!Rocket Draconis" ) {
             { name: "Rank",   value: "58\n60\n63\n65", inline: true},
             { name: "Planet", value: "Gazica\nGazica\nHive\nHive\nAll planets\nR5", inline: true},
             { name: "Mantis", value: "Repogrub\nRepogrub\nRepogrub\nRepogrub\nRepogrub\nR82 Strong Unit", inline: true},
+        ]
       }
     });
-}
+}}
+
 });
 
-client.login(process.env.TOKEN);
+client.login('NDUxNDUxMjk1OTg4MDU2MDY1.DfKGfg.9HA9SGuJKsP31RdOUWu04VEtlyY');
