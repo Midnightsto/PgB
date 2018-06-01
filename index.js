@@ -738,8 +738,77 @@ if(message.content == "pg!RT Draconis" ) {
         ]
       }
     });
-}}
+}
 
-});
+if(message.content == "pg!Actuator Draconis" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Speed Actuator's obtainable in Draconis:",
+        fields: [
+            { name: "Name",   value: "Zero Point\nZP Power\n ZP Warp Accelerator\nZP Temporal Velocitizor\nDraconis Derailor\nDraconis Ancient\nDraconis Ancient Long\nDraconis Ancient Strong", inline: true},
+            { name: "Cryo",   value: "17'131\n23'814\n34'325\n41'980\n83'959'n96\n553", inline: true},
+            { name: "Energy", value: "126\n130\n136\n140", inline: true},
+            { name: "Rank",   value: "58\n60\n63\n65", inline: true},
+            { name: "Planet", value: "Gazica\nGazica\nHive\nHive\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "Pyro\nPyro\nPyro\nPyro\nPyro\nR79 DS ", inline: true},
+        ]
+      }
+    
+    });
+}
+
+if(message.content == "pg!Actuator Sol" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Actuator's obtainable in Sol:",
+        fields: [
+            { name: "Name",   value: "Antimatter\nAmEnhanced\nAM Power\nAM Nano\nAM Flux\nAM Tachyon\nAM Temporal\nSol Sailor\nSol Ancient\nSol Ancient Long\nSol Ancient Strong", inline: true},
+            { name: "Cryo",   value: "4'047\n4'257\n4'409\n4'883\n5'091\n5'966\n9'217\n18'434\n21'200", inline: true},
+            { name: "Energy", value: "90\n96\n100\n106\n110\n116\n120", inline: true},
+            { name: "Rank",   value: "40\n43\n45\n48\n50\n53\n55", inline: true},
+            { name: "Planet", value: "Mars\nMars\nMars\nMoon\nMoon\nEarth\nEarth\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "Pyro\nPyro\nPyro\nPyro\nPyro\nPyro\nPyro\nPyro\nPyro\nR82 Strong Unit", inline: true},
+        ]
+      }
+    });
+}
+if(message.content == "pg!Actuator Mizar" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Speed Actuator's obtainable in Mizar:",
+        fields: [
+            { name: "Name",   value: " Nano Fusion\nPharma Fusion\nPhotonic Fusion\nFusion Force\nMizar Metronome Derailor\nMizar Ancient\nMizar Ancient Long\nMizar Ancient Strong", inline: true},
+            { name: "Cryo",   value: "2'336\n2'790\n3'532\n3'878\n7'756\n8'919", inline: true},
+            { name: "Energy", value: "70\n76\n80\n86", inline: true},
+            { name: "Rank",   value: "58\n60\n63\n65", inline: true},
+            { name: "Planet", value: "Baumar\nBaumar\nMolikar\nMolikar\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "Pyro\nPyro\nPyro\nPyro\nPyro\nR79 DS ", inline: true},
+        ]
+      }
+    
+    });
+}
+if(message.content == "pg!Actuator Gemini" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "Speed Actuator's obtainable in Gemini:",
+        fields: [
+            { name: "Name",   value: "Zero Point\nZP Power\n ZP Warp Accelerator\nZP Temporal Velocitizor\nDraconis Derailor\nDraconis Ancient\nDraconis Ancient Long\nDraconis Ancient Strong", inline: true},
+            { name: "Cryo",   value: "17'131\n23'814\n34'325\n41'980\n83'959'n96\n553", inline: true},
+            { name: "Energy", value: "126\n130\n136\n140", inline: true},
+            { name: "Rank",   value: "58\n60\n63\n65", inline: true},
+            { name: "Planet", value: "Gazica\nGazica\nHive\nHive\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "Pyro\nPyro\nPyro\nPyro\nPyro\nR79 DS ", inline: true},
+        ]
+      }
+    
+    });
+}
+}});
 
 client.login('NDUxNDUxMjk1OTg4MDU2MDY1.DfKGfg.9HA9SGuJKsP31RdOUWu04VEtlyY');
+
