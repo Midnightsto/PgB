@@ -644,6 +644,99 @@ if(message.content == "pg!Rocket Draconis" ) {
       }
     });
 }
+                        if(message.content == "pg!RT Vega" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtanable in vega:",
+        fields: [
+            { name: "Name",   value: "Standard\nEnhanced \nPower \nVega \nVega Ancient Remote Repair V\nega Ancient Rapid \nVega Ancient Strong", inline: true},
+            { name: "Cryo",   value: "103\n183\n378\n755\n869", inline: true},
+            { name: "Energy", value: "20\n24\n30", inline: true},
+            { name: "Rank",   value: "8\n10\n12", inline: true},
+            { name: "Planet", value: "Lyris(15/40)\nAurora\nAurora\nAurora\nR5", inline: true},
+            { name: "Mantis", value: "R10 Sentinel\nR12 Mender\nR14,16\nR12~16\nR82 Strong unit ",inline :true},
+        ]
+      }
+    });
+}
+                         if(message.content == "pg!RT Antares" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtainable in Antares:",
+        fields: [
+            { name: "Name",   value: "Nanite\nGammatronic\nRadiant\nAngelic\nAntares\nAntares Ancient\nAntares Ancient Rapid\nAntares Ancient Strong", inline: true},
+            { name: "Cryo",   value: "512\n608\n828\n1'066\n2'132\n2'452", inline: true},
+            { name: "Energy", value: "36\n40\n46\n50", inline: true},
+            { name: "Rank",   value: "14\n16\n18\n20", inline: true},
+            { name: "Planet", value: "Terasa\nTerasa\nLustra\nLustra\nTerasa\nR5", inline: true},
+            { name: "Mantis", value: "R18 Mender\nR20 \nR23\n25\nR18~20\nR82 Strong unit ",inline :true},
+        ]
+      }
+    });
+}
+                            if(message.content == "pg!RT Gemini" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtainable in Gemini",
+        fields: [
+            { name: "Name",   value: "Fusion\nEnhanced Fusion\nFusion power\nGemini\nGemini Ancient\nGemini Ancient Rapid\nGemini Ancient Strong",   inline: true},
+            { name: "Cryo",   value: "1'317\n1'446\n1'589\n3'654", inline: true},
+            { name: "Energy", value: "56\n60\n66", inline: true},
+            { name: "Rank",   value: "23\n25\n28", inline: true},
+            { name: "Planet", value: "Prosperous,Commerce Central\nProsperous,Commerce Central\nTechnatoria\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "R26,27,28\nR29,30,31\n32,33\n26~33 \nR82 Strong unit ",inline :true},
+        ]
+      }
+    });
+}
+	                        if(message.content == "pg!RT Mizar" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtainable in Mizar:",
+        fields: [
+            { name: "Name",   value: "Neuron\nSynapse\nPhotonic\nFusion Force\nMizar Molding\nMizar Ancient\nMizar Ancient Rapid\nMizar Ancient Strong", inline: true},
+            { name: "Cryo",   value: "2'186\n2'735\n3'463\n3'756\n7'512", inline: true},
+            { name: "Energy", value: "70\n76\n80\n86", inline: true},
+            { name: "Rank",   value: "30\n33\n35\n38", inline: true},
+            { name: "Planet", value: "Baumar\nBaumar\nMolikar\nMolikar\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "R37,35 Mender\n38,39\n40,41\n43,44\n35~44\nR82 Strong Unit", inline: true},
+      }
+    });
+}
+			                        if(message.content == "pg!RT Sol" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtainable in Sol:",
+        fields: [
+            { name: "Name",   value: "Antimatter\nAM Enhanced\n AM Power\n AM Materializing \n AM Enhanced Materializing \n AM Power Materializing\n AM Temporal Phasing\nSol Salvor\nSol Ancient\nSol Ancient Rapid\n Sol Ancient Strong", inline: true},
+            { name: "Cryo",   value: "3'935\n4'135\n4;322\n4'787\n4'991\n5'849\n8'702\n17'404\n20'014", inline: true},
+            { name: "Energy", value: "90\n96\n100\n106\n110\n116\n120", inline: true},
+            { name: "Rank",   value: "40\n43\n45\n48\n50\n53\n55", inline: true},
+            { name: "Planet", value: "Mars\nMars\nMars\nMoon\nMoon\nEarth\nEarth\n All planets\nR5", inline: true},
+            { name: "Mantis", value: "R45,47 Mender\n48,49\n50\n52,54Repogrub\n55,57\n57,58\n59,60\n52~60\nR82 Strong Unit", inline: true},
+      }
+    });
+}
+	                        if(message.content == "pg!RT Draconis" ) {
+
+    message.channel.send({embed: {
+        color: 3447003,
+        title: "RT's obtainable in Draconis:",
+        fields: [
+            { name: "Name",   value: "Zero Point\nZP Power\n ZP Warp Gate\nZP Temporal Reversal\nDraconis Deliverance\nDraconis Ancient\nDraconis Ancient Rapid\nDraconis Ancient Strong", inline: true},
+            { name: "Cryo",   value: "17'395\n24'055\n35'631\n43'443\n86'886\n99'919", inline: true},
+            { name: "Energy", value: "126\n130\n136\n140", inline: true},
+            { name: "Rank",   value: "58\n60\n63\n65", inline: true},
+            { name: "Planet", value: "Gazica\nGazica\nHive\nHive\nAll planets\nR5", inline: true},
+            { name: "Mantis", value: "Repogrub\nRepogrub\nRepogrub\nRepogrub\nRepogrub\nR82 Strong Unit", inline: true},
+      }
+    });
+}
 });
 
 client.login(process.env.TOKEN);
