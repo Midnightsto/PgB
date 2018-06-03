@@ -1,7 +1,7 @@
 // Discord.js bot
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const help = {
+const embed = {
     "title": "Help",
     "description": "Here is a list of commands",
     "url": "",
@@ -185,8 +185,8 @@ client.on('message', (message) => {
     if(message.content == "pg!Energy Prosperous"){
         message.channel.send("Here is the map that you requested",{files:["https://imgur.com/cPrwv72.png"]});
     }
-    if(message.content == "pg!help"){
-   message.channel.send(help);
+    if(message.content == "help"){
+   message.channel.send(embed);
 }
 if(message.content == "pg!Blaster Vega" ) {
 
