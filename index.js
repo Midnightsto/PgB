@@ -1,9 +1,35 @@
 // Discord.js bot
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const help = {
+    "title": "Help",
+    "description": "Here is a list of commands",
+    "url": "",
+    "color": 1378422,
+    "timestamp": "2018-06-03T17:28:35.595Z",
+    "footer": {
+      "text": "Sent by a bot"
+    },
+    "thumbnail": {
+      "url": "https://imgur.com/v32w2Ad.png"
+    },
+    "author": {
+      "name": "Midnight Storm"
+    },
+    "fields": [
+      {
+        "name": "pg!(BP) (System)",
+        "value": "Enter a blueprint name and a system to see all available blueprint's of that type in the said system(Check pg!list) \nEx:pg!RD Vega"
+      },
+      {
+        "name": "pg!list",
+        "value": "A list of blueprints available for imput"
+      }
+    ]
+  };
 
 client.on('ready', () => {
-    client.user.setActivity('pg!help', {type: 'WATCHING'});
+    client.user.setActivity("pg!help", {type: 'WATCHING'});
 });
 
 client.on('message', (message) => {
@@ -160,14 +186,7 @@ client.on('message', (message) => {
         message.channel.send("Here is the map that you requested",{files:["https://imgur.com/cPrwv72.png"]});
     }
     if(message.content == "pg!help"){
-    message.channel.send({embed: {
-        color: 3447003,
-        title: "Command:",
-        fields:[
-            {name:"(Bp) (System)",value:"Searches for all the available version of the specified blueprint in the specified system(see Abbr)", inline:true},
-
-        ]
-    }})
+   message.channel.send(help);
 }
 if(message.content == "pg!Blaster Vega" ) {
 
