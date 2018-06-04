@@ -14,6 +14,7 @@ client.on("guildMemberAdd", (member) => {
     defaultChannel.send("Welcome our new users!\n" + userlist);
     newUsers.clear();
   }
+});
 
 client.on('message', (message) => {
        const user = message.mentions.users.first();
@@ -30,6 +31,5 @@ message.channel.fetchMessages({
  message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
 });
 });
-
 client.login('NDUzMjg3NTM5OTY1Njg5ODU2.Dfc7dg.L8k1PAyEgbZTOejvzeq-_jn24f0');
 
