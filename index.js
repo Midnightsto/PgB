@@ -4,6 +4,16 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setActivity("pg!help", {type: 'WATCHING'});
 });
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  newUsers.set(member.id, member.user);
+
+  if (newUsers.size > 0) {
+    const defaultChannel = guild.channels.find(c=> c.permissionsFor(guild.me).has("SEND_MESSAGES"));
+    const userlist = newUsers.map(u => u.toString()).join(" ");
+    defaultChannel.send("Welcome our new users!\n" + userlist);
+    newUsers.clear();
+  }
 
 client.on('message', (message) => {
        const user = message.mentions.users.first();
