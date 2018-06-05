@@ -6,19 +6,50 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-       const user = message.mentions.users.first();
-const amount = !!parseInt(message.content.split(' ')[1]) ? parseInt(message.content.split(' ')[1]) : parseInt(message.content.split(' ')[2])
-if (!amount) return message.reply('Must specify an amount to delete!');
-if (!amount && !user) return message.reply('Must specify a user and amount, or just an amount, of messages to purge!');
-message.channel.fetchMessages({
- limit: amount,
-}).then((messages) => {
- if (user) {
- const filterBy = user ? user.id : Client.user.id;
- messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
- }
- message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+// Discord.js bot
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const CLEAR_MESSAGES = '!clearMessages';
+
+client.on('ready', () => {
+    client.user.setActivity("NarutoBot V1", {type: 'WATCHING'});
 });
-});
+
+client.on('message', (message) => {
+    if (message.content == CLEAR_MESSAGES) {
+
+        // Check the following permissions before deleting messages:
+        //    1. Check if the user has enough permissions
+        //    2. Check if I have the permission to execute the command
+  
+        if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
+          message.channel.sendMessage("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+          console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+          return;
+        } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
+          message.channel.sendMessage("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+          console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+          return;
+        }
+  
+        // Only delete messages if the channel type is TextChannel
+        // DO NOT delete messages in DM Channel or Group DM Channel
+        if (message.channel.type == 'text') {
+          message.channel.fetchMessages()
+            .then(messages => {
+              message.channel.bulkDelete(messages);
+              messagesDeleted = messages.array().length; // number of messages deleted
+  
+              // Logging the number of messages deleted on both the channel and console.
+              message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messagesDeleted);
+              console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
+            })
+            .catch(err => {
+              console.log('Error while doing Bulk Delete');
+              console.log(err);
+            });
+        }
+      }
+    });
 client.login('NDUzMjg3NTM5OTY1Njg5ODU2.Dfc7dg.L8k1PAyEgbZTOejvzeq-_jn24f0');
 
