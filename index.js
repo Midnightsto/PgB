@@ -6,6 +6,11 @@ const Discord = require("discord.js");
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
 
+// Here we load the config.json file that contains our token and our prefix values. 
+const config = require("./config.json");
+// config.token contains the bot's token
+// config.prefix contains the message prefix.
+
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -128,5 +133,5 @@ client.on("message", async message => {
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
 });
-client.login('NDUzMjg3NTM5OTY1Njg5ODU2.Dfg9Ow.CG49rAAiw4z4mvtm6gQ-tdCJA00');
 
+client.login(config.token);
