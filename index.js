@@ -10,7 +10,9 @@ const client = new Discord.Client();
 const config = require("./config.json");
 // config.token contains the bot's token
 // config.prefix contains the message prefix.
-
+client.on('guildMemberAdd', member => {
+    member.guild.channels.get('channelID').send("Welcome to the server"); 
+});
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
