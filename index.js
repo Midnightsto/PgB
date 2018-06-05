@@ -51,5 +51,5 @@ client.on('message', (message) => {
         }
       }
     });
-client.login('NDUzMjg3NTM5OTY1Njg5ODU2.Dfc7dg.L8k1PAyEgbZTOejvzeq-_jn24f0');
+client.login('NDUzMjg3NTM5OTY1Njg5ODU2.Dfg9Ow.CG49rAAiw4z4mvtm6gQ-tdCJA00');
 
