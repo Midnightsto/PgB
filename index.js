@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
-    client.user.setActivity("pg!help", {type: 'WATCHING'});
+    client.user.setActivity("Naruto Bot V1", {type: 'WATCHING'});
 });
 
 client.on('message', (message) => {
