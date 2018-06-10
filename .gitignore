@@ -77,4 +77,6 @@ jspm_packages
 .env
 # Config
 config.json
+# config file
+config.json
 
