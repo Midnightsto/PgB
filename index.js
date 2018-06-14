@@ -137,6 +137,933 @@ client.on("message", async message => {
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
+    if(command === "arima"){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+     return message.channel.send({embed: {
+      color: 3447003,
+      author: {
+        name: client.user.username,
+        icon_url: client.user.avatarURL
+      },
+      title: "Arima Kishou",
+      thumbnail: {
+        "url": "https://t00.deviantart.net/ay342j73jxfwq6SAV3k-Z8MPGo4=/fit-in/300x900/filters:no_upscale():origin()/pre00/98d1/th/pre/f/2016/227/9/8/follow__kishou_arima_x_reader__tokyo_ghoul__by_truth4sanity-dae0476.jpg"
+      },
+      url: "http://tokyoghoul.wikia.com/wiki/Kishou_Arima",
+      description: "Here are the details you requested",
+      fields: [{
+          name: "Affilation:CCG",
+          value: "Name:	Kishou Arima\nJapanese name:有馬 貴将 （ありま きしょう\nAlias: CCG's Reaper\nSpecies:Half Human\nGender:Male\nOccupation:Ghoul investigator\nWard:1\nQuinque:Yukimura 1/3 (Koukaku, Rate B) IXA (Koukaku, Rate S+) Narukami (Ukaku, Rate S+) Owl (Ukaku, Rate SSS)\nRank:Special Class"
+        }
+        
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: client.user.avatarURL,
+        text: "© TG Fan"
+      }
+    }
+  });
+
+  }
+  if(command === "touka"){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: "Touka Kirishima",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/f9/Touka_Kirishima.png/revision/latest/scale-to-width-down/280?cb=20140202181308"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Touka_Kirishima",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "Affilation:Anteiku(formely),:Re(formely),Goat",
+         value: "Name:	Touka Kirishima\nJapanese name:霧嶋 董香 （きりしま とうか）\nAlias: 	Rabbit\nSpecies: Ghoul\nGender:Female\nnWard:20\nRC Type: Ukaku\n"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+ });
+}
+if(command === "ayato"){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Ayato Kirishima",
+   thumbnail: {
+     "url": "https://orig00.deviantart.net/b5f2/f/2015/095/5/7/curfew____ayato_kirishima_by_summerlove57-d8o8u83.jpg"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Ayato_Kirishima",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree - Executive (Formerly) :re - Associates (Formerly) Goat",
+       value: "Name:	Ayato Kirishima\nJapanese name	霧嶋 絢都 （きりしま あやと）\nAlias: 	Black Rabbit\nSpecies: Ghoul\nGender:Male\nnWard:20th Ward (Formerly) 11th Ward (Formerly) 14th Ward (Formerly) 19th Ward (Formerly) 24th Ward (Currently)\nRC Type: Ukaku\nRating:SS"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   
+ }
+}
+});
+}
+ if(command === "renji" || command === "yomo"){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Renji Yomo",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/5/50/Yomo_watching_Takatsuki%27s_press_conference.jpg"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Renji_Yomo",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Anteiku (Formerly) :re (Formerly) Goat",
+       value: "Name:	Renji Yomo\nJapanese name:四方 蓮示 （よも れんじ）\nAlias: 	Raven\nSpecies: Ghoul\nGender:Male\nnWard:4th Ward (Formerly) 20th Ward(Formerly) 24th Ward (Currently)\nRC Type: Ukaku"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+ 
+});
+
+}
+if(command === "yoshimura" || command === "kuzen"){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+  
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Yoshimura",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/a/a8/Yoshimura_manga.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Yoshimura",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:V (Defected) Anteiku (Formerly)",
+       value: "Name:Yoshimura\nJapanese name:芳村 （よしむら\nAlias: 	Kuzen,Manager,Non-Killing Owl\nSpecies: Ghoul\nGender:Male\nnWard: 20th Ward\nRC Type: Ukaku\nRating:SSS"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+ 
+});
+
+}
+if(command === "eto" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Eto Yoshimura",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/1/18/Eto_short_hair.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Eto_Yoshimura",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree - Founder/Leader",
+       value: "Name:Eto Yoshimura Sen Takatsuki\nJapanese name:芳村 エト, 高槻 泉\nAlias: 	X, One-Eyed Owl, Taxidermied Owl\nSpecies: 	One-eyed ghoul\nGender:Female\nnWard: 24th Ward (Formerly) 23rd Ward (Imprisoned, Formerly)\nRC Type: Ukaku\nRating:SSS( as Owl),S( as Eto)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "noro" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Eto Yoshimura",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/49/Noro_in_re.jpg/"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Noroi",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree ",
+       value: "Name:Noro\nJapanese name:ノロ\nSpecies: 	 Ghoul\nGender:Male\nWard: 24th Ward\nRC Type: Bikaku\nRating:SS~"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "tatara" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Tatara",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/6/62/Tatara_re.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Tatara",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree,Chi She Lian (Formerly) ",
+       value: "Name:Tatara\nJapanese name:	タタラ\nSpecies: 	 Ghoul\nGender:Male\nRC Type: Unknown\nRating:SS~"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "yamori" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Yakumo Oomori",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/d/d2/Yamori_re.png/"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Yakumo_Oomori",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree - Executive White Suits - Founding Leader ",
+       value: "Name:Yakumo Oomori\nJapanese name:	大守 八雲 （おおもり やくも）\nAlias:Yamori,Jason\nSpecies: 	 Ghoul\nGender:Male\nWard:13 Ward\nRC Type: Rinkaku\nRating:S"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "naki" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Naki",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/f5/Naki_TGre2.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Naki",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Aogiri Tree - Executive (Formerly), White Suits - Leader Goat",
+       value: "Name:Naki\nJapanese name:	ナキ\nSpecies: 	 Ghoul\nGender:Male\nWard:23rd Ward (Imprisoned, Formerly) 13th Ward (Formerly) 24th Ward (Currently)\nRC Type: Koukaku\nRating:S"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "tsukiyama" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Shuu Tsukiyama",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/4f/Shuu_Tsukiyama_re_volume_4_cover.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Shuu_Tsukiyama",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Tsukiyama family - Family Head Seinan Gakuin University (Formerly) Ghoul Restaurant (Defected) Kaneki's group (Formerly) :re - Associates (Formerly) Goat",
+       value: "Name:Shuu Tsukiyama\nJapanese name:	月山 習 （つきやま しゅう）\nSpecies: 	 Ghoul\nGender:Male\n Alias: Gourmet,MM\nWard: 21st Ward (Formerly) 20th Ward (Formerly) 24th Ward (Currently)\nRC Type: Koukaku\nRating:S"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "hinami" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Hinami Fueguchi",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/4c/Hinami_checks_up_on_Banjou.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Hinami_Fueguchi",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Kaneki's group (Formerly) Aogiri Tree (Formerly) :re - Associates (Formerly) Goat",
+       value: "Name:Hinami Fueguchi\nJapanese name:	笛口 雛実 （ふえぐち ひなみ）\nSpecies: 	 Ghoul\nGender:Female\n Alias: Daughter Ghoul, Number 745, Yotsume\nWard: 20th Ward (Formerly) 6th Ward (Formerly) 23rd Ward (Imprisoned, Formerly) 24th Ward (Currently)\nRC Type: Koukaku,Rinkaku\nRating:SS"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "takizawa" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Seidou Takizawa",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/fa/Takizawabrains.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Seidou_Takizawa",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Formerly) Aogiri Tree (Defected) Goat (Formerly)",
+       value: "Name:Seidou Takizawa\nJapanese name:滝澤 政道 （たきざわ せいどう）\nSpecies: 	Artificial One-eyed ghoul, Human (Formerly)\nGender:Male\n Alias:Owl,T-OWL \nWard: 20th Ward (Formerly) \nRC Type: Ukaku\nRank:Rank 2\nRating:SS"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "akira" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Akira Mado",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/3/33/Akira_promotion_ceremony.png/"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Akira_Mado",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Defected) Mado Squad (Defected)",
+       value: "Name:Akira Mado\nJapanese name:真戸 暁 （まど アキラ）\nSpecies:Human \nGender:Female\n Alias:Spine User \nWard: 20th Ward (Formerly) 1st Ward (Formerly) \n Rank: Rank 2 (Tokyo Ghoul) Rank 1 (Tokyo Ghoul Epilogue) First Class (until :re Ch. 32) Associate Special Class (after :re Ch. 32)\nQuinque:Amatsu (Koukaku/Bikaku) Fueguchi One (Rinkaku) Fueguchi Two (Koukaku)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "shinohara" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Yukinori Shinohara",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/4d/Shinohara_1.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Yukinori_Shinohara",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG  ",
+       value: "Name:Yukinori Shinohara\nJapanese name:	篠原 幸紀 （しのはら ゆきのり）\nSpecies: Human  \nGender:Male\n Alias:The Invulnerable Shinohara \nWard: 1st Ward (Currently) 20th ward (Formerly)\n Rank:  Special Class \nQuinque:Demon Yamada 1 (Bikaku, Rate S) Arata series: Arata proto, Arata β 0.8, Arata (Koukaku)\n"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "amon" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Amon Koutarou",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/0c/Amon_Holding_Maris_Stella.png/"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Amon_Koutarou",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Defected) ",
+       value: "Name:Amon Koutarou\nJapanese name:亜門 鋼太朗 （あもん こうたろう）\nSpecies:Artificial One-eyed ghoul Human (Formerly) \nGender:Male\n Alias:Floppy, Robed Giant, A-OWL \nWard: 20th Ward (Formerly) 1st Ward (Formerly)\n Rank: Rank 1 (until Ch. 80) First Class (after Ch. 80) Special Class (Posthumous, after Ch. 143)\nQuinque:Doujima 1/2 (Koukaku/Bikaku) Kura (Koukaku) Arata proto • II (Koukaku)\nRC Type:Ukaku"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "juuzu" || command === "suzuya" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Juuzo Suzuya",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/1/13/Juuzou_profile.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Juuzo_Suzuya",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:Ghoul Restaurant (Defected) CCG Suzuya Squad - Squad Leader S3 Squad - Squad Leader ",
+       value: "Name:Juuzu Suzuya\nJapanese name:鈴屋 什造 （すずや じゅうぞう）\nSpecies: Human  \nGender:Male\n Alias:Rei Suzuya CCG's Jason The Next Arima The Reaper \nWard: 20th Ward (Formerly) 1st Ward (Formerly)\n Rank: Rank 3 (debut), Rank 2 (after Ch. 80), First Class (Joker), Associate Special Class (Tokyo Ghoul:re) ,Special Class (after :re Ch. 32)\nQuinque:Scorpion 1/56 (Bikaku, Rate B)[4] 13's Jason (Rinkaku, Rate S+)[4] Arata Joker (Koukaku)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "hanbee" || command === "abara" ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Hanbee Abara",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/c/c7/Hanbee14.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Hanbee_Abara",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG ,Suzuya Squad, S3 Squad",
+       value: "Name:Hanbee Abara\nJapanese name:	阿原 半兵衛 （あばら はんべえ）\nSpecies: Human  \nGender:Male\n \nWard: 13th Ward \n Rank:  Rank 2 (until :re Ch. 32) Rank 1 (after :re Ch. 32)\nQuinque :Silver Skull (Ukaku, Rate A)[1] Arata Ⅱ (Koukaku)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "saiko"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Saiko Yonebayashi",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/46/Saikopromise.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Saiko_Yonebayashi",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Mado Squad (Formerly), Quinx Squad - Deputy Squad Leader, S2 Squad",
+       value: "Name:Saiko Yonebayashi\nJapanese name:	米林 才子 (よねばやし さいこ)\nSpecies: Quinx Human (Formerly)  \nGender:Female\n \nWard: 1'st Ward \n Rank:  Rank 3 (until :re Ch. 32) Rank 2 (after :re Ch. 32)\nRC Type:Rinkaku"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "shirazu"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Ginshi Shirazu",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/1/11/Shirazu_bald.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Ginshi_Shirazu",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Mado Squad, Quinx Squad - Leader",
+       value: "Name:Ginshi Shirazu\nJapanese name:	不知 吟士\nSpecies: Quinx Human (Formerly)  \nGender:Male\nWard: 1'st Ward \n Rank:  Rank 3 (until :re Ch. 32) Rank 2 (after :re Ch. 32)\nRC Type:Ukaku"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "urie"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Kuki Urie",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/2/28/Kuki_Urie_as_Qs_squad_leader.jpeg"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Kuki_Urie",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Quinx Squad - Mentor / Squad Leader ,Mado Squad (Formerly), S2 Squad - Leader (after :re Ch. 117)",
+       value: "Name:Kuki Urie\nJapanese name:	瓜江 久生 （うりえ くき）\nSpecies: Quinx Human (Formerly)  \nGender:Male\nWard: 1'st Ward \n Rank:  Rank 2 (until :re Ch. 32) Rank 1 (after :re Ch. 32) First Class (after :re Ch. 117)\nRC Type:Koukaku\nQuinque:Ginkui (Bikaku, Rate SS)Tsunagi <plain> (Bikaku, Rate C)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "mutsuki"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Tooru Mutsuki",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/d/dd/Mutsuki_orders_Oggai_to_eliminate_all_ghouls.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Tooru_Mutsuki",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Defected) Mado Squad (Formerly) Quinx Squad (Formerly) Hachikawa Squad (Formerly) S3 Squad (Formerly) Suzuya Squad (Formerly) Oggai Squads - Mentor (Formerly)",
+       value: "Name:Tooru Mutsuki\nJapanese name:		六月 透 （むつき とおる）\nSpecies: Quinx Human (Formerly)\nAlias: Eyepatch  \nGender:Female\nWard: 1'st Ward \n Rank:  Rank 3 (until :re Ch. 32) Rank 1 (after :re Ch. 32) \nRC Type:Bikaku\nQuinque:Ifraft (Rinkaku, Rate B) Abksol (Rinkaku, Rate B) Black Linshing Nut 16/16 (Koukaku, Rate B+) White Loosting Nut 16/16 (Koukaku, Rate B+)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "aura"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Shinsanpei Aura",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/e/e4/Shinsanpei_murder_intention_of_killing_Kaneki.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Shinsanpei_Aura",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Mado Squad (Formerly), Quinx Squad (Formerly), S2 Squad, Suzuya Squad (Formerly), S3 Squad (Formerly)",
+       value: "Name:Shinsanpei Aura\nJapanese name:		安浦 晋三平 （あうら しんさんぺい\nSpecies: Quinx Human (Formerly)  \nGender:Male\nWard: 1'st Ward \n Rank:  Rank 2\nRC Type:Ukaku\nQuinque:Tsunagi <hard> (Bikaku, Rate C"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "hsiao"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Ching-Li Hsiao",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/5/50/Ching-Li_scolding_Aura.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Ching-Li_Hsiao",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Mado Squad (Formerly), Quinx Squad, S2 Squad",
+       value: "Name:Ching-Li Hsiao Genie Hsiao\nJapanese name:	小 静麗 （シャオ・ジンリー） ジーニーシャオ\nSpecies: Quinx,Half Human (Formerly)  \nGender:Female\nWard: 1'st Ward \n Rank:  Rank 1\nRC Type:Koukaku\nQuinque:Kuai 1/4 (Rinkaku, Rate A)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "higemaru"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Touma Higemaru",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/f1/Higemaru_intro.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Touma_Higemaru",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG, Mado Squad (Formerly), Quinx Squad, S2 Squad",
+       value: "Name:Touma Higemaru\nJapanese name:		髯丸 トウマ （ひげまる トウマ）\nSpecies: Quinx, Human (Formerly)  \nGender:Male\nWard: 1'st Ward \n Rank:  Rank 3\nRC Type:Bikaku\nQuinque:Hige Onimaru (Bikaku, Rate A)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "matsuri"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Matsuri Washuu",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/0e/Matsuri.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Matsuri_Washuu",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG,Washuu Clan (Formerly), S2 Squad - Leader (Formerly), V (Formerly)",
+       value: "Name:Matsuri Washuu\nJapanese name:			和修 政 （わしゅう まつり）\nSpecies: Ghoul \nGender:Male \n Rank:  Associate Special Class (until :re Ch. 32) Special Class (after :re Ch. 32)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "yoshitoki"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Yoshitoki Washuu",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/2/24/Yoshitoki_Washuu.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Yoshitoki_Washuu",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG,Washuu Clan, V",
+       value: "Name:Matsuri Washuu\nJapanese name:		和修 吉時 （わしゅう よしとき）\nSpecies: Ghoul \nGender:Male \n Ward:1st Ward"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "tsuneyoshi"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: "Tsuneyoshi Washuu",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/4/4c/Tsuneyoshi_Washuu.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Tsuneyoshi_Washuu",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG,Washuu Clan, V",
+       value: "Name:Tsuneyoshi Washuu\nJapanese name:		和修 吉時 （わしゅう よしとき）\nAlias:Demon Tsune\nSpecies: Ghoul \nGender:Male \n Ward:1st Ward"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "furuta"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: " Furuta Washuu",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/02/Furuta_Nimura_Vol_6.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Kichimura_Washuu",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Resigned), Washuu Clan, V ,Sunlit Garden, Akihiro Kanou (Formerly) Clowns, Ghoul Restaurant (Formerly)",
+       value: "Name:Kichimura Washuu ,Nimura Furuta\nJapanese name:	和修 吉福 和修旧多 宗太\nAlias:Souta, PG, Washuu King\nSpecies: Artificial One-eyed ghoul, Half-human (Formerly) \nGender:Male \n Ward:1st Ward\nRank:Bureau Director (Formerly)[8] Rank 1 (until Ch. 117)\nRC Type:Rinkaku\nQuinque:Tsunagi <custom> (Bikaku, Rate C) Rotten Follow (Rinkaku, Rate S)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
+if(command === "rize"  ){
+  if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+    return message.reply("Sorry, you are not a manga reader")
+
+
+  return message.channel.send({embed: {
+   color: 3447003,
+   author: {
+     name: client.user.username,
+     icon_url: client.user.avatarURL
+   },
+   title: " Rize Kashimiro",
+   thumbnail: {
+     "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/02/Furuta_Nimura_Vol_6.png"
+   },
+   url: "http://tokyoghoul.wikia.com/wiki/Rize_Kashimiro",
+   description: "Here are the details you requested",
+   fields: [{
+       name: "Affilation:CCG (Resigned), Washuu Clan, V ,Sunlit Garden, Akihiro Kanou (Formerly) Clowns, Ghoul Restaurant (Formerly)",
+       value: "Name:Kichimura Washuu ,Nimura Furuta\nJapanese name:	和修 吉福 和修旧多 宗太\nAlias:Souta, PG, Washuu King\nSpecies: Artificial One-eyed ghoul, Half-human (Formerly) \nGender:Male \n Ward:1st Ward\nRank:Bureau Director (Formerly)[8] Rank 1 (until Ch. 117)\nRC Type:Rinkaku\nQuinque:Tsunagi <custom> (Bikaku, Rate C) Rotten Follow (Rinkaku, Rate S)"
+     }
+     
+   ],
+   timestamp: new Date(),
+   footer: {
+     icon_url: client.user.avatarURL,
+     text: "© TG Fan"
+   }
+ }
+});
+}
 });
 
 client.login(config.token);
