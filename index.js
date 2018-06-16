@@ -11,7 +11,7 @@ const config = require("./config.json");
 // config.token contains the bot's token
 // config.prefix contains the message prefix.
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('405447988262207490').send("Welcome to the server"); 
+     return member.guild.channels.get('405447988262207490').send("Welcome to the server"); 
 });
 client.on('guildMemberAdd', member => {
    return member.send("Welcome to the server!");
