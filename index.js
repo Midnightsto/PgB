@@ -14,7 +14,7 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.get('405447988262207490').send("Welcome to the server"); 
 });
 client.on('guildMemberAdd', member => {
-   member.send("Welcome to the server!");
+   return member.send("Welcome to the server!");
 });
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
