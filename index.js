@@ -6,6 +6,12 @@ const Discord = require("discord.js");
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
 const request = require('request');
+var randomCat = require('random-cat');
+var url = randomCat.get();
+var urlWithSize = randomCat.get({
+  width: 120,
+  height: 600
+});
 
 // Here we load the config.json file that contains our token and our prefix values. 
 const config = require("./config.json");
