@@ -164,6 +164,7 @@ client.on("message", async message => {
   });
 
   }
+   
   if(command === "touka"){
     if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
       return message.reply("Sorry, you are not a manga reader")
@@ -1061,6 +1062,17 @@ if(command === "rize"  ){
  }
 });
 }
+   if(message.content === "cat"){
+    request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
+
+}, function(error, response, body) {
+	if(!error && response.statusCode == 200) {
+		message.channel.send(response.request.uri.href);
+	} else {
+		console.log(error);
+	}
+})
+  }
 });
 
 client.login(config.token);
